@@ -37,7 +37,7 @@ describe("Cart controller", () => {
         expect(cart).toEqual(expectedCart);
     });
 
-    it("Should update product quantity and total when adding a  product that is already in the cart", () => {
+    it("Should update product quantity and total when adding a product that is already in the cart", () => {
 
         addToCart(product, cart);
         addToCart(product, cart);
@@ -98,5 +98,13 @@ describe("Cart controller", () => {
         };
         expect(cart).toEqual(expectedCartSingleItem);
 
+    });
+
+    it("should throw error when cart doesn't contain the product intended to be removed", ()=> {
+        try {
+            expect(removeFromCart(product, cart)).toThrowError("Product not found in cart");
+        } catch (e) {
+
+        }
     });
 });

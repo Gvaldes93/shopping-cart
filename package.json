@@ -4,7 +4,7 @@
   "description": "shopping cart",
   "main": "src/index.ts",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "build": "babel ./src --out-dir lib --extensions '.ts,.tsx'",
     "start": "npm run build && node lib/index.js"
   },
