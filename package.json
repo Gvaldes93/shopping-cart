@@ -1,7 +1,7 @@
 {
-  "name": "vetradar",
+  "name": "shopping-cart",
   "version": "1.0.0",
-  "description": "VetRadar technical challenge - shopping cart",
+  "description": "shopping cart",
   "main": "src/index.ts",
   "scripts": {
     "test": "jest",
@@ -12,7 +12,8 @@
     "transform": {
       "^.+\\.jsx?$": "babel-jest",
       "^.+\\.tsx?$": "ts-jest"
-    }
+    },
+    "testRegex": "./src/.*spec.ts"
   },
   "author": "German Valdes",
   "license": "ISC",

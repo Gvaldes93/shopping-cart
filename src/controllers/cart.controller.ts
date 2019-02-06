@@ -4,7 +4,7 @@ import {ProductDS} from "../data-stores/product.ds";
 
 
 const getProductPositionInCart = (cart: Cart, product: Product) : number => {
-    if(!cart.items) {
+    if(cart.items.length == 0) {
         return -1;
     }
     return cart.items.findIndex((item: ProductDS) => item.id === product.id);
