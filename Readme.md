@@ -1,14 +1,18 @@
 ## Shopping Cart
-Shopping cart API.
-A Node Express application with Typescript Jest as test runner, written in ES6 and transpiled with Babel.
+A Node/Express application server with Typescript, Jest as test runner, express-session and written in ES6 and transpiled with Babel.
+This app uses express-session to keep state of the cart between requests, notice no store is specified for this, consider 
+utilising a store as for example redis for a production environment. 
+Business logic was developed by using TDD approach. You can run test with the command `npm test`.
+
 
 ### Quickstart
-build the docker image by running `docker build -t shoppingapp .`
+Build the docker image by running `docker build -t shoppingapp .`
 This will run test and build the image. 
 Start the docker image with `docker run -p 3000:3000 shoppingapp`
 
 ### API 
-The API was built following HATEOAS methodologies. You can explore the api here
+The API was built following HATEOAS.
+To start, explore the API: 
 __http://localhost:3000/api - GET__
 
 #### Products Endpoint
