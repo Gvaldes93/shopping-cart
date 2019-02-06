@@ -63,3 +63,7 @@ curl -b cookie-jar.txt -c cookie-jar.txt -X DELETE http://localhost:3000/api/car
 When finish don't forget to remove the file cookie-jar.txt
 and delete the docker image by running `docker ps -a` grab CONTAINER ID value for image "shoppingapp", 
 run `docker rm -f container-id` and then `docker rmi shoppingapp`.
+
+### Development
+Run `npm test -- --watch` to write test and re run the test suite on changes.
+To try out the application run `npm start`.
