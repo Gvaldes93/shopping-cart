@@ -39,8 +39,12 @@ cartRouter.put('/', (req: Request, res: Response, next: NextFunction) => {
 
 cartRouter.delete('/', (req: Request, res: Response, next: NextFunction) => {
     validateRequestData(req, res);
-    removeFromCart(req.body as Product, req.session.cart as Cart);
-    res.json(setCartHateoasLinks(req.session.cart));
+    try {
+        removeFromCart(req.body as Product, req.session.cart as Cart);
+        res.json(setCartHateoasLinks(req.session.cart));
+    }catch(e) {
+        next(e);
+    }
 
 });
 

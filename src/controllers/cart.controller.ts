@@ -41,5 +41,7 @@ export const removeFromCart = (product: Product, cart: Cart) => {
 
         cart.total -= productDS.price;
         cart.total = roundToTwoDecimals(cart.total);
+    } else {
+        throw Error('Product not found in cart');
     }
 };
