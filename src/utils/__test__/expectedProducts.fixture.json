@@ -1,0 +1,73 @@
+{
+  "products": [
+    {
+      "product": {
+        "id": 1,
+        "name": "Sledgehammer",
+        "price": 125.76
+      },
+      "link": [
+        {
+          "rel": "self",
+          "href": "http://localhost:3000/api/products/1"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Axe",
+        "price": 190.51
+      },
+      "link": [
+        {
+          "rel": "self",
+          "href": "http://localhost:3000/api/products/2"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Bandsaw",
+        "price": 562.14
+      },
+      "link": [
+        {
+          "rel": "self",
+          "href": "http://localhost:3000/api/products/3"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 4,
+        "name": "Chisel",
+        "price": 13.9
+      },
+      "link": [
+        {
+          "rel": "self",
+          "href": "http://localhost:3000/api/products/4"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 5,
+        "name": "Hacksaw",
+        "price": 19.45
+      },
+      "link": [
+        {
+          "rel": "self",
+          "href": "http://localhost:3000/api/products/5"
+        }
+      ]
+    }
+  ],
+  "link": {
+    "href": "http://localhost:3000/api/products",
+    "rel": "self"
+  }
+}
