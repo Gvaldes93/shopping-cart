@@ -15,8 +15,8 @@ The API was built following HATEOAS.
 To start, explore the API: 
 __http://localhost:3000/api - GET__
 
-#### Products Endpoint
-__http://localhost:3000/api/products - GET__
+### Products Endpoint
+__http://localhost:3000/api/products - GET__   
 __http://localhost:3000/api/products/{id} - GET__
 
 ### Cart Endpoint
