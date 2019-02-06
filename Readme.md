@@ -43,7 +43,7 @@ curl -b cookie-jar.txt -c cookie-jar.txt -X PUT http://localhost:3000/api/cart \
 ~~~~
 
 * Check cart is updated `curl -b cookie-jar.txt -c cookie-jar.txt -X GET http://localhost:3000/api/cart`
-* When no cookies sent you get an empty cart `curl -X GET http://localhost:3000/api/cart` since creates new session
+* When no cookies are sent you get an empty cart `curl -X GET http://localhost:3000/api/cart` since express creates a new session.
 * Delete product from cart
 ~~~~
 curl -b cookie-jar.txt -c cookie-jar.txt -X DELETE http://localhost:3000/api/cart \
@@ -58,4 +58,4 @@ curl -b cookie-jar.txt -c cookie-jar.txt -X DELETE http://localhost:3000/api/car
 #### cleanin up
 When finish don't forget to remove the file cookie-jar.txt
 and delete the docker image by running `docker ps -a` grab CONTAINER ID value for image "shoppingapp", 
-run `docker rm container-id` and then `docker rmi shoppingapp`.
+run `docker rm -f container-id` and then `docker rmi shoppingapp`.

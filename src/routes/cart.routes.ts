@@ -43,7 +43,7 @@ cartRouter.delete('/', (req: Request, res: Response, next: NextFunction) => {
         removeFromCart(req.body as Product, req.session.cart as Cart);
         res.json(setCartHateoasLinks(req.session.cart));
     }catch(e) {
-        next(e);
+        res.status(400).json({ error: e.message})
     }
 
 });
